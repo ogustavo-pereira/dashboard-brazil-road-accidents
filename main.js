@@ -19,3 +19,28 @@ function changeInputHidden(classOption) {
     document.querySelector(classOption).className += " inputStaBlock"
 }
 changeInputHidden(prefix + typeSelect.value)
+var map;
+function initialize() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: new google.maps.LatLng(-15.235004,-51.92528),
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
+    panControl: false, 
+    draggable: false,
+    zoomControl: false,
+    scrollwheel: false
+    });
+  var imagem="./shot.png"
+
+    
+  for (var x in westcampus){
+    var building = westcampus[x];
+    var location = new google.maps.LatLng(building.LATITUDE,building.LONGETUDE);
+    var marker = new google.maps.Marker({
+    position : location,
+    icon : imagem,
+    map:map
+  });
+}
+
+}

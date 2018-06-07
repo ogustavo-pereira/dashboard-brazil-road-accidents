@@ -68,7 +68,8 @@ body {
 }
 
 .main {
-    width: 80%;
+    width: 78.1vw;
+    float: right;
 }
 .inputSta {
     display: none;
@@ -99,4 +100,7 @@ body {
     padding: 30px;
     border:none;
     margin-top: 2px;
+}
+#map{
+    height: 100vh;
 }
