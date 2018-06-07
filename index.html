@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Inicio</title>
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-    </style>
-
+	<link rel="stylesheet" href="styled.css">
+	<title>Brazil Road Accidents with GoogleMaps</title>
 </head>
+
 <body>
-<center><img src=".\imagem/topo.png" style="height: 200px"></center>
-<div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:100%">
-  </div>
-</div>
-<script  language="JavaScript" src=".\script/mapa.js"></script>
-<script src=".\js/westcampus.js"></script>
-
-<center>
-<h4>Informe o ESTADO(UF) e Horário desejado e depois clique em GERAR Mapa</h4>
-<table>
-	<form id="unicos">
-		<tr>
+	<div class="aside">
+		<a class="link" href="./map.html"><h1 class="title">Brazil Road Accidents</h1></a>
 		
-		</tr>
-		<tr>
-			<td>ESTADO(UF): </td>
-			<td> <input type="text" class="form-control" name="estado" id="uf" size="10"  maxlength="2" ngth="2"></td>
-		</tr>
-		
-		<tr>
-			<td>HORÁRIO: </td>
-			<td><input type="text" class="form-control" name="horario" id="horarios" size="10"  maxlength="2"  value='00' onkeypress='return SomenteNumero(event)'></td>
-		</tr>
+		<label class="lab" for="type-input">Select you tipe for filter</label><br>
+		<select class="select-filter" name="type-input" id="type-input">
+			<option value="0">Stade</option>
+			<option value="1">Citty</option>
+			<option value="2">Lat and Long</option>
+		</select>
+		<ul class="type-input-0 inputSta">
+			<li><label class="lab" for="stade">Stade</label></li>
+			<li><input class="searchInput" type="text" name="stade" id="stade" placeholder="ex: Minas Gerais"></li>
+		</ul>
+		<ul class="type-input-1 inputSta">
+			<li><label class="lab" for="citty">Citty</label></li>
+			<li><input class="searchInput" type="text" name="citty" id="citty" placeholder="ex: Minas Gerais"></li>
+		</ul>
+		<ul class="type-input-2 inputSta">
+			<li><label class="lab" for="lat">Lat</label><input class="searchInput" type="text" name="lat" id="lat" placeholder="ex: Minas Gerais"></li>
+			<li><label class="lab" for="long">Long</label><input class="searchInput" type="text" name="long" id="long" placeholder="ex: Minas Gerais"></li>
+		</ul>
 
-			
-</table>
-			<input type="button" name="submit" class="btn btn-success" value="GERAR MAPA" onclick="Verificador()"/>
-			<a href="./mapa.html"><input class="btn btn-success" type="button"  name="submit" value="GERAR COM TODOS ACIDENTES"/></a>
+		<input type="button" name="submit" class="btn " value="GERAR MAPA" onclick="Verificador()" />
+	</div>
+	<div class="main">
+		<div id="mapa" style="width:100%; height:100%"></div>
+	</div>
 
-	</form>
 
-</center>
-<div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-  </div>
-</div>
-<div id="mapa" style="width:100%; height:100%"></div>
-<!-- Maps API Javascript -->
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD5RchZIPfhGjzpTAEZGmcl0hNN0N4zZos&amp;sensor=false"></script>
+
+
+	<!--<script language="JavaScript" src=".\script/mapa.js"></script>
+	<script src=".\js/westcampus.js"></script>-->
+	<script src="main.js"></script>
+	<!-- Maps API Javascript -->
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD5RchZIPfhGjzpTAEZGmcl0hNN0N4zZos&amp;sensor=false"></script>
 
 </body>
+
+
 </html>
