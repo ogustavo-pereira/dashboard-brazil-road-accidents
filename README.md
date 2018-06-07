@@ -1,18 +1,14 @@
-# Mapa-de-Acidentes-JAVASCRIPT
-## Javascript with API Google MAPS
+# GoogleMaps Road Accidents
+## Road Accidents with Google Maps.
 
+![screen shot 2015-06-20](https://raw.githubusercontent.com/oguhpereira/GoogleMaps-Road-Accidents/master/screenshot.PNG)
 
-The project is a search platform for traffic accidents for 2010 to 2015 in Brazil.This project contains a javascript coding using the google maps API to mark the traffic accident points.
+## About 
+The GoogleMaps Road Accidents is a project on the accidents of transits collected with python road police database and added to json.
 
-![screen shot 2015-06-20](https://github.com/oguhpereira/GoogleMaps-Road_Accidents/blob/master/img-rename/topo.PNG)
+## Objective 
+The purpose of the project is to visualize traffic accidents on the map.
 
-1. Add your key in index.html and map.html, paste on [yourkey] 
+## License
 
-```
-<script src="http://maps.googleapis.com/maps/api/js?key=[yourkey];sensor=false"></script>
-
-```
-
-2. Open index.html
-
-The scrip for convert csv and scraping the results are into the folder code python.
+[MIT License](./LICENSE)
