@@ -24,11 +24,12 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: new google.maps.LatLng(-15.235004,-51.92528),
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-    panControl: false, 
-    draggable: false,
-    zoomControl: false,
-    scrollwheel: false
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    panControl: true, 
+    draggable: true,
+    zoomControl: true,
+    scrollwheel: true,
+    label: true
     });
   var imagem="./shot.png"
 
