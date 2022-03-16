@@ -2,9 +2,11 @@
 
 let typeSelect = document.querySelector("#type-input")
 var prefix = ".type-input-"
+
 typeSelect.addEventListener("change",function(e){
     changeInputHidden(prefix + typeSelect.value)
 })
+
 function changeInputHidden(classOption) {
     let inputblock = document.querySelectorAll(".inputStaBlock")
     
@@ -18,8 +20,12 @@ function changeInputHidden(classOption) {
     
     document.querySelector(classOption).className += " inputStaBlock"
 }
+
 changeInputHidden(prefix + typeSelect.value)
+
+
 var map;
+
 function initialize() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
