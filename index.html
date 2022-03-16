@@ -1,53 +1,13 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<link rel="stylesheet" href="styled.css">
-	<title>Brazil Road Accidents with GoogleMaps</title>
-</head>
-
-<body>
-	<div class="aside">
-		<a class="link" href="./map.html"><h1 class="title">Brazil Road Accidents</h1></a>
-		
-		<label class="lab" for="type-input">Select you tipe for filter</label><br>
-		<select class="select-filter" name="type-input" id="type-input">
-			<option value="0">Stade</option>
-			<option value="1">Citty</option>
-			<option value="2">Lat and Long</option>
-		</select>
-		<ul class="type-input-0 inputSta">
-			<li><label class="lab" for="stade">Stade</label></li>
-			<li><input class="searchInput" type="text" name="stade" id="stade" placeholder="ex: Minas Gerais"></li>
-		</ul>
-		<ul class="type-input-1 inputSta">
-			<li><label class="lab" for="citty">Citty</label></li>
-			<li><input class="searchInput" type="text" name="citty" id="citty" placeholder="ex: Minas Gerais"></li>
-		</ul>
-		<ul class="type-input-2 inputSta">
-			<li><label class="lab" for="lat">Lat</label><input class="searchInput" type="text" name="lat" id="lat" placeholder="ex: Minas Gerais"></li>
-			<li><label class="lab" for="long">Long</label><input class="searchInput" type="text" name="long" id="long" placeholder="ex: Minas Gerais"></li>
-		</ul>
-
-		<input type="button" name="submit" class="btn " value="GERAR MAPA" onclick="Verificador()" />
-	</div>
-	<div class="main">
-			<div id="map"></div>
-	</div>
-
-
-
-
-
-	<script src="./westcampus.js"></script>
-	<script src="main.js"></script>
-	<!-- Maps API Javascript -->
-	
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5RchZIPfhGjzpTAEZGmcl0hNN0N4zZos&callback=initialize">
-    </script>
-
-</body>
-
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
