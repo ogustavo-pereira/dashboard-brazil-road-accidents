@@ -1,5 +1,5 @@
 {
-  "name": "google-maps-road-accidents",
+  "name": "dashboard-brazil-road-accidents",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,13 +9,15 @@
     "lint": "eslint --ext .js,.ts,.jsx,.tsx,.json ."
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.7.0",
+    "axios": "^0.26.1",
     "babel": "^6.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "leaflet": "^1.7.1",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-leaflet": "^3.2.5"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",

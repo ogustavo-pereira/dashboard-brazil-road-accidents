@@ -1,6 +1,8 @@
 // Packages
 import React, {ReactElement} from 'react';
-import GoogleMap from './components/GoogleMap';
+
+// Components
+import {CustomMap} from './components';
 
 /**
  * Project main tab rendering component
@@ -9,7 +11,7 @@ import GoogleMap from './components/GoogleMap';
 function App(): ReactElement {
   return (
     <div>
-      <GoogleMap />
+      <CustomMap />
     </div>
   );
 }
