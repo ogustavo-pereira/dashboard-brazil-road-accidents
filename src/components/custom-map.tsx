@@ -1,16 +1,15 @@
 // Packages
-import React, {
+import  {
   memo,
   useState,
-  useCallback,
   ReactElement,
   useEffect,
 } from 'react';
+import 'leaflet/dist/leaflet.css';
 import {
   MapContainer as LeafletMap,
   TileLayer,
   CircleMarker,
-  Popup,
 } from 'react-leaflet';
 
 // Services
@@ -19,18 +18,12 @@ import { getAllMarkerPositions } from '../service/api';
 // Types
 import { Positions } from '../types';
 
-const containerStyle = {
-  width: '100vw',
-  height: '100vh',
-};
-
 /**
  * Component for displaying the world map with markings
  * @return {ReactElement}
  */
 function CustomMap(): ReactElement {
   const [isLoading, setLoading] = useState(false);
-  console.log('render');
   const [makers, setMarkers] = useState<Array<Positions> | null>(null);
 
   useEffect(() => {
@@ -51,7 +44,7 @@ function CustomMap(): ReactElement {
   }, []);
 
   return !isLoading ? (
-    <LeafletMap center={[-15.235004, -51.92528]} zoom={4}>
+    <LeafletMap center={[-15.235004, -51.92528]} zoom={4} style={{ height: '100vh' }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

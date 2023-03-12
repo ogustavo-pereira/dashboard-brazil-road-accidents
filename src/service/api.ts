@@ -17,11 +17,8 @@ export async function getAllMarkerPositions(): Promise<Array<Positions>> {
     data: { data },
   } = await axios
     .get<GetAllMakerPositionsResult>(
-      String(import.meta.env.VITE_DATASET_ALL_POSITION_RAW_URL)
+      'https://raw.githubusercontent.com/oguhpereira/dataset-road-traffic-accidents-brazil/master/dataset/json-data/total.json'
     )
-    .then((response) => {
-      return response;
-    });
 
   return data;
 }
