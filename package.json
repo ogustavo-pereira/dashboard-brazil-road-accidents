@@ -2,19 +2,21 @@
   "name": "dashboard-brazil-road-accidents",
   "private": true,
   "version": "0.0.0",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx,.json ."
+    "lint": "eslint src/**/*.ts src/**/*.tsx",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "axios": "^0.26.1",
     "babel": "^6.23.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "leaflet": "^1.7.1",
-    "prettier": "^2.5.1",
+    "prettier": "^2.8.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-leaflet": "^3.2.5"
@@ -29,7 +31,8 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "@vitejs/plugin-react": "^1.0.7",
-    "eslint": "^8.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.36.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.29.4",
     "rollup-plugin-terser": "^7.0.2",

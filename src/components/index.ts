@@ -1,1 +1,1 @@
-export {default as CustomMap} from './custom-map'
+export { default as CustomMap } from './custom-map';

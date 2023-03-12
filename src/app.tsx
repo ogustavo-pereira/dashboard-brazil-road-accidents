@@ -1,8 +1,8 @@
 // Packages
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from 'react';
 
 // Components
-import {CustomMap} from './components';
+import { CustomMap } from './components';
 
 /**
  * Project main tab rendering component
